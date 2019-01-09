@@ -65,7 +65,7 @@
             </div>
 
         <figure class="figure">
-            <td rowspan="3"><img class="card-img-top" src="{{ URL::asset($products->img) }}" alt="Card image cap"></td>
+            <td rowspan="3"><img class="card-img-top" src={{$products -> img}} alt="Card image cap"></td>
             <h3 class ="font-weight-bold"> {{$products -> name}}  </h3><b>
             <p><h4 >@銷售入數:{{$products -> amount}}入</h4>
             <p><h4 >@規格：{{$products_info -> contain}}</h4>
@@ -99,7 +99,7 @@
             </li>
         </ul>
         <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-商品資訊" role="tabpanel" aria-labelledby="pills-home-tab" style="font-family:微軟正黑體;">{{$products -> describe}}</div>
+            <div class="tab-pane fade show active" id="pills-商品資訊" role="tabpanel" aria-labelledby="pills-home-tab" style="font-family:微軟正黑體;">{{$products_info -> describe}}</div>
 
             <div class="tab-pane fade" id="pills-規格介紹" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <div class="card text-center">
