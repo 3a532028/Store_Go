@@ -87,6 +87,16 @@ Route::get('商品資訊_查詢','Product_infoController@index')->name('商品�
 
 Route::post('商品資訊_查詢','Product_infoController@product_Search');
 
+//沙子
+
+Route::get('/','GoodsController@index_sales')->name('index');
+
+Route::get('/carousel/{id}','GoodsController@carousel_ad_page')->name('carousel.ad');
+
+Route::get('/on_sales/{id}','GoodsController@on_sales_ad_page')->name('on_sale.ad');
+
+//Route::get('/on_sales/get/{$goodes_id}','GoodsController@get_on_sales($goods_id)');
+
 //測試功能
 Route::get('/shopping',function (){
     return view('product_insert',['title'=>'新增購物商品']);

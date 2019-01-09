@@ -25,10 +25,10 @@
             <li class="nav-item">
                 <a class="nav-link" href="/商品資訊_查詢">商品資訊查詢</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/product">特價資訊</a>
-            </li>
-            <li class="nav-item">
+            {{--<li class="nav-item">--}}
+                {{--<a class="nav-link" href="/product">特價資訊</a>--}}
+            {{--</li>--}}
+            {{--<li class="nav-item">--}}
             @if(\Illuminate\Support\Facades\Auth::check())
 
                 @else
@@ -82,11 +82,11 @@
             </li>
             @endif
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search
-            </button>
-        </form>
+        {{--<form class="form-inline my-2 my-lg-0">--}}
+            {{--<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">--}}
+            {{--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search--}}
+            {{--</button>--}}
+        {{--</form>--}}
     </div>
 
 </nav>

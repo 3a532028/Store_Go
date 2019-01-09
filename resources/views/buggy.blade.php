@@ -41,6 +41,7 @@
             font-family: "微軟正黑體";
             text-align: center;
         }
+
     </style>
     <script>
         function ajaxget()
@@ -52,7 +53,7 @@
                 success: function (data) {
 
 
-                    // var product_id=[];
+                    var product_id=[];
                     var amount=[];
                     var img=[];
 
@@ -62,6 +63,7 @@
                     var len=(data.length)/2;
 
                     for (i = 0; i < len; i++) {
+                        product_id.push(data[i].product_id);
                         amount.push(data[i].amount);
 
                     }
@@ -83,8 +85,8 @@
                             "<div class=\"container\">\n" +
                             "                    <div class=\"row\">\n" +
                             "                        <div class=\"col-4\">\n" +
-                            "                            <a href="+img[i]+"\n" +
-                            "                               target=\"_blank\">\n" +
+                            "                            <a href="+'/商品資訊/'+product_id[i]+"\n" +
+                            "                               target=\"_self\">\n" +
                             "                                <img class=\"img-fluid\" src="+img[i]+">\n" +
                             "                            </a>\n" +
                             "                        </div>\n" +
